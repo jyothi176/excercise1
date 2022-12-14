@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>arrays</h1>
+    <p id="print"></p>
+    <p id="new"></p>
+    length of arrays:
+    <p id="len"></p>
+    <p id="old"></p>
+    <p id="for"></p>
+    <div id="of"></div><br>
+    <h1>strings</h1>
+    <p id="van"></p>
+    length of string:
+    <p id="can"></p>
+    <p id="ran"></p>
+    <script>
+        const cars=['bmw','benz','range rover','swift','ferari']
+        document.getElementById("print").innerHTML = cars
+        cars[0]="kia"
+        document.getElementById("new").innerHTML = cars
+        document.getElementById("len").innerHTML = cars.length
+        cars.push('nexa')
+        document.getElementById("old").innerHTML=cars
+        for (i in cars){
+            document.getElementById("for").innerHTML=cars
+        }
+        for (j in cars){
+            document.getElementById("of").innerHTML=cars[j]
+        }
+
+        const str="it is a string"
+        document.getElementById("van").innerHTML=str
+        document.getElementById("can").innerHTML=str.length
+        document.getElementById("ran").innerHTML=str.slice(3,9)
+        
+    </script>
+</body>
+</html>
